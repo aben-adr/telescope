@@ -2,6 +2,7 @@
 ! description: n/a
 ! public: true
 ! author: Abenezer
+! avatar: #00FF00
 
 $site=clang.llvm.org
 $site=docs.rust-lang.org
@@ -54,29 +55,16 @@ $site=fishshell.com
 $site=mail.proton.me
 $site=postgresql.org
 $site=wiki.nixos.org
-$site=
-$site=
-$site=
 
 $site=alternativeto.net
 $site=arxiv.org
-$site=
-$site=
-$site=
 
 $site=berlitz.com
 $site=thefreedictionary.com
 $site=chicagomanualofstyle.org
 $site=pubmed.ncbi.nlm.nih.gov
 $site=ncbi.nlm.nih.gov
-$site=
-$site=
-$site=
 
 $site=nytimes.com
 $site=letterboxd.com
 $site=imdb.com
-$site=
-$site=
-$site=
-
