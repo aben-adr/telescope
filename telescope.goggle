@@ -71,7 +71,7 @@ $boost=5,site=git.kernel.org
 /docs^$boost=3,site=git-scm.com
 
 ! Find stuff
-$boost=9,site=github.com
+$boost=5,site=github.com
 $boost=5,site=formulae.brew.sh
 /packages^$boost=6,site=archlinux.org
 /packages^$boost=5,site=aur.archlinux.org
