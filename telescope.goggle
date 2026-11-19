@@ -1,141 +1,131 @@
 ! name: Telescope
-! description: no more reddit, newsy, & stackoverflow dominating every search. Not 'downrank'ing or 'discard'ing anything.
+! description: Computer science centric and heavily opinionated.
 ! public: true
 ! author: Abenezer
+! homepage: https://github.com/aben-adr/telescope
 
-$boost=2,site=clang.llvm.org
-$boost=1,site=llvm.org
-$boost=3,site=docs.rust-lang.org
-$boost=3,site=doc.rust-lang.org
-$boost=3,site=docs.rs
-$boost=3,site=crates.io
-$boost=2,site=lib.rs
-$boost=2,site=users.rust-lang.org
-$boost=2,site=rust-lang.github.io
-$boost=2,site=rust-lang-nursery.github.io
-$boost=2,site=this-week-in-rust.org
-$boost=3,site=docs.python.org
-$boost=3,site=typescriptlang.org
-$boost=3,site=nodejs.org
-$boost=2,site=docs.deno.com
-$boost=3,site=javascript.info
-$boost=2,site=tc39.es
-$boost=3,site=go.dev
-$boost=3,site=pkg.go.dev
-$boost=1,site=go.googlesource.com
-$boost=1,site=kotlinlang.org
-$boost=3,site=lua.org
-$boost=3,site=www.lua.org
-$boost=3,site=ocaml.org
-$boost=1,site=discuss.ocaml.org
-$boost=2,site=gleam.run
-$boost=3,site=ziglang.org
-$boost=3,site=haskell.org
-$boost=3,site=www.haskell.org
-$boost=3,site=wiki.haskell.org
-$boost=1,site=downloads.haskell.org
-$boost=2,site=hoogle.haskell.org
-$boost=3,site=en.cppreference.com
-$boost=3,site=cplusplus.com
-$boost=2,site=eel.is
-$boost=2,site=isocpp.github.io
-$boost=2,site=abseil.io
-$boost=3,site=www.c-language.org
-$boost=1,site=www.externsoft.ch
-$boost=1,site=docs.oracle.com
-$boost=3,site=microsoft.github.io
-$boost=3,site=learn.microsoft.com
-$boost=1,site=devblogs.microsoft.com
-$boost=2,site=docs.jj-vcs.dev
-$boost=3,site=cmake.org
-$boost=2,site=git-scm.com
+! Goggle search URL: https://search.brave.com/goggles?q=%s&goggles_id=https%3A%2F%2Fraw.githubusercontent.com%2Faben-adr%2Ftelescope%2Frefs%2Fheads%2Fmain%2Ftelescope.goggle&source=goggles
+! NOT GROUPED
+$boost=9,site=clang.llvm.org
+$boost=9,site=llvm.org
+$boost=9,site=docs.rust-lang.org
+$boost=9,site=doc.rust-lang.org
+$boost=9,site=docs.rs
+$boost=9,site=crates.io
+$boost=9,site=lib.rs
+$boost=9,site=users.rust-lang.org
+$boost=9,site=rust-lang.github.io
+$boost=9,site=rust-lang-nursery.github.io
+$boost=9,site=this-week-in-rust.org
 
-$boost=3,site=developer.mozilla.org
-$boost=3,site=developer.chrome.com
-$boost=3,site=www.chromium.org
-$boost=3,site=spec.whatwg.org
-$boost=3,site=dom.spec.whatwg.org
-$boost=3,site=webidl.spec.whatwg.org
-$boost=3,site=www.w3.org
-$boost=1,site=gpuweb.github.io
-$boost=1,site=harfbuzz.github.io
-$boost=2,site=www.schemastore.org
+! programming languages, official.
+$boost=10,site=typescriptlang.org
+$boost=10,site=docs.deno.com
+$boost=6,site=swift.org
+$boost=5,site=elixir-lang.org
+$boost=5,site=julialang.org
+$boost=6,site=dart.dev
+$boost=8,site=beta.docs.nodejs.org
+$boost=8,site=api.dart.dev
+/docs/latest/api^$boost=8,site=nodejs.org
+/learn^$boost=8,site=nodejs.org
+/learn^$boost=8,site=dev.java
+/ref^$boost=10,site=go.dev
+/docs^$boost=10,site=kotlinlang.org
+/3^$boost=10,site=docs.python.org
+/grammar^$boost=10,site=kotlinlang.org
+/javase/specs^$boost=10,site=docs.oracle.com
 
-$boost=3,site=kernel.org
-$boost=3,site=www.kernel.org
-$boost=2,site=gnu.org
-$boost=2,site=www.gnu.org
-$boost=2,site=sourceware.org
-$boost=2,site=freedesktop.org
-$boost=2,site=www.freedesktop.org
-$boost=2,site=specifications.freedesktop.org
-$boost=3,site=systemd.io
-$boost=2,site=wayland.app
-$boost=2,site=linux.die.net
-$boost=3,site=man7.org
-$boost=2,site=man.archlinux.org
-$boost=2,site=manpages.debian.org
-$boost=2,site=ss64.com
-$boost=2,site=archlinux.org
-$boost=2,site=wiki.archlinux.org
-$boost=2,site=nixos.org
-$boost=2,site=wiki.nixos.org
-$boost=2,site=noogle.dev
-$boost=2,site=docs.freebsd.org
-$boost=2,site=docs.brew.sh
-$boost=2,site=repology.org
-$boost=2,site=wiki.osdev.org
-$boost=3,site=developer.android.com
-$boost=3,site=source.android.com
-$boost=3,site=cs.android.com
-$boost=3,site=developer.apple.com
-$boost=2,site=docs.riscv.org
-$boost=3,site=intel.com
-$boost=3,site=www.intel.com
-$boost=1,site=www.felixcloutier.com
+! idk....
+$boost=10,site=docs.kernel.org
+$boost=7,site=docs.oracle.com
+$boost=7,site=learn.microsoft.com
+$boost=6,site=unicode.org
+$boost=10,site=web.dev
+$boost=10,site=developer.mozilla.org
+/api/core/kotlin-stdlib^$boost=10,site=kotlinlang.org
+/api/kotlinx-io^$boost=10,site=kotlinlang.org
+/docs/multiplatform^$boost=10,site=kotlinlang.org
+/Public^$boost=6,site=unicode.org
+/windows/win32^$boost=10,site=learn.microsoft.com
 
-$boost=3,site=neovim.io
-$boost=2,site=qmk.fm
-$boost=2,site=fishshell.com
-$boost=3,site=zsh.sourceforge.io
+! supplemental documentation / learning
+$boost=7,site=wiki.archlinux.org
+$boost=7,site=docs.brew.sh
+$boost=7,site=kernelnewbies.org
+$boost=7,site=foldoc.org
+$boost=10,site=elixir.bootlin.com
+$boost=4,site=acm.org
+/wiki^$boost=8,site=wikipedia.org
+/dads^$boost=7,site=xlinux.nist.gov
+/KernelGlossary^$boost=7,site=kernelnewbies.org
+/man^$boost=7,site=man.archlinux.org
+/protocols^$boost=6,site=wayland.app
+
+! source code
+$boost=5,site=git.kernel.org
+/documentation/master/std^$boost=7,site=ziglang.org
+/ziglang/zig/pulls^$boost=3,site=codeberg.org
+/ziglang/zig/issues^$boost=3,site=codeberg.org
+/cmake/help/latest^$boost=3,site=cmake.org
+/docs^$boost=3,site=git-scm.com
+
+! Find stuff
+$boost=9,site=github.com
+$boost=5,site=formulae.brew.sh
+/packages^$boost=6,site=archlinux.org
+/packages^$boost=5,site=aur.archlinux.org
+
+! Software documentation 
 $boost=3,site=postgresql.org
-$boost=2,site=everything.curl.dev
-$boost=2,site=mail.proton.me
-$boost=1,site=elevenforum.com
-$boost=2,site=devdocs.io
+$boost=3,site=graalvm.org
 
-$boost=3,site=datatracker.ietf.org
-$boost=3,site=www.rfc-editor.org
-$boost=3,site=unicode.org
-$boost=2,site=arxiv.org
-$boost=3,site=cp-algorithms.com
-$boost=2,site=cses.fi
-$boost=2,site=www.cs.princeton.edu
-$boost=2,site=web.stanford.edu
-$boost=3,site=en.algorithmica.org
-$boost=2,site=graphicscodex.com
-$boost=3,site=www.howtovulkan.com
-$boost=2,site=learnxinyminutes.com
-$boost=2,site=rosettacode.org
-$boost=3,site=mathwords.com
+! Activites
+$boost=9,site=leetcode.com
 
-$boost=3,site=github.com
-$boost=3,site=gitlab.com
-$boost=3,site=codeberg.org
-$boost=1,site=lobste.rs
-$boost=1,site=antirez.com
-$boost=1,site=www.marginalia.nu
-$boost=1,site=marginalia-search.com
-$boost=3,site=en.wikipedia.org
-$boost=1,site=annas-archive.gl
-/blog/$boost=1,site=cloud.google.com
+! CS blogs, news ...
+$boost=5,site=lwn.net
+$boost=5,site=devblogs.microsoft.com
+$boost=1,site=blogs.oracle.com
+$boost=5,site=blog.rust-lang.org
+$boost=5,site=blog.golang.org
+$boost=4,site=blog.janestreet.com
+$boost=4,site=github.blog
+$boost=3,site=opensource.googleblog.com
+$boost=4,site=blog.chromium.org
+$boost=4,site=blog.servo.org
+/blog^$boost=3,site=brave.com
+/en/blog^$boost=4,site=nodejs.org
+/news^$boost=4,site=dev.java
+/java^$boost=5,site=blogs.oracle.com
+/developers^$boost=5,site=blogs.oracle.com
+/security^$boost=6,site=blogs.oracle.com
 
-$boost=2,site=alternativeto.net
-$boost=1,site=berlitz.com
-$boost=3,site=thefreedictionary.com
-$boost=2,site=chicagomanualofstyle.org
-$boost=3,site=pubmed.ncbi.nlm.nih.gov
-$boost=3,site=ncbi.nlm.nih.gov
-$boost=3,site=nytimes.com
-$boost=1,site=letterboxd.com
-$boost=1,site=imdb.com
+! stuff
+$boost=5,site=forbes.com
+$boost=3,site=investopedia.com
+$boost=3,site=chicagotribune.com
+
+! noise
+$downrank=2,site=dev.to
+$downrank=2,site=new.ycombinator.com
+$downrank=2,site=stackoverflow.com
+$downrank=2,site=news.ycombinator.com
+$downrank=2,site=lobste.rs
+$downrank=3,site=linkedin.com
+$downrank=3,site=medium.com
+
+! Freedom
+$discard,site=coursera.org
+$discard,site=wikihow.com
+$downrank,site=medium.com
+$discard,site=quora.com
+$discard,site=yelp.com
+$discard,site=itsfoss.com
+$discard,site=reddit.com
+$discard,site=superuser.com
+$discard,site=pcmag.com
+$discard,site=pcmag.com
+$discard,site=facebook.com
+$discard,site=coursehero.com
+$discard,site=helpdeskgeek.com
