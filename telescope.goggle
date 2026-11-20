@@ -4,19 +4,17 @@
 ! author: Abenezer
 ! homepage: https://github.com/aben-adr/telescope
 
-! Goggle search URL: https://search.brave.com/goggles?q=%s&goggles_id=https%3A%2F%2Fraw.githubusercontent.com%2Faben-adr%2Ftelescope%2Frefs%2Fheads%2Fmain%2Ftelescope.goggle&source=goggles
 ! NOT GROUPED
-$boost=9,site=clang.llvm.org
-$boost=9,site=llvm.org
-$boost=9,site=docs.rust-lang.org
-$boost=9,site=doc.rust-lang.org
-$boost=9,site=docs.rs
-$boost=9,site=crates.io
-$boost=9,site=lib.rs
-$boost=9,site=users.rust-lang.org
-$boost=9,site=rust-lang.github.io
-$boost=9,site=rust-lang-nursery.github.io
-$boost=9,site=this-week-in-rust.org
+$boost=5,site=clang.llvm.org
+$boost=5,site=llvm.org
+$boost=5,site=doc.rust-lang.org
+$boost=5,site=docs.rs
+$boost=5,site=crates.io
+$boost=5,site=lib.rs
+$boost=4,site=users.rust-lang.org
+$boost=5,site=rust-lang.github.io
+$boost=3,site=rust-lang-nursery.github.io
+$boost=1,site=this-week-in-rust.org
 
 ! programming languages, official.
 $boost=10,site=typescriptlang.org
@@ -71,10 +69,10 @@ $boost=5,site=git.kernel.org
 /docs^$boost=3,site=git-scm.com
 
 ! Find stuff
-$boost=5,site=github.com
-$boost=5,site=formulae.brew.sh
-/packages^$boost=6,site=archlinux.org
-/packages^$boost=5,site=aur.archlinux.org
+$boost=1,site=github.com
+$boost=3,site=formulae.brew.sh
+/packages^$boost=3,site=archlinux.org
+/packages^$boost=3,site=aur.archlinux.org
 
 ! Software documentation 
 $boost=3,site=postgresql.org
@@ -84,16 +82,16 @@ $boost=3,site=graalvm.org
 $boost=9,site=leetcode.com
 
 ! CS blogs, news ...
-$boost=5,site=lwn.net
-$boost=5,site=devblogs.microsoft.com
+$boost=1,site=lwn.net
+$boost=1,site=devblogs.microsoft.com
 $boost=1,site=blogs.oracle.com
-$boost=5,site=blog.rust-lang.org
-$boost=5,site=blog.golang.org
-$boost=4,site=blog.janestreet.com
-$boost=4,site=github.blog
-$boost=3,site=opensource.googleblog.com
-$boost=4,site=blog.chromium.org
-$boost=4,site=blog.servo.org
+$boost=1,site=blog.rust-lang.org
+$boost=1,site=blog.golang.org
+$boost=1,site=blog.janestreet.com
+$boost=1,site=github.blog
+$boost=1,site=opensource.googleblog.com
+$boost=1,site=blog.chromium.org
+$boost=1,site=blog.servo.org
 /blog^$boost=3,site=brave.com
 /en/blog^$boost=4,site=nodejs.org
 /news^$boost=4,site=dev.java
@@ -102,9 +100,9 @@ $boost=4,site=blog.servo.org
 /security^$boost=6,site=blogs.oracle.com
 
 ! stuff
-$boost=5,site=forbes.com
-$boost=3,site=investopedia.com
-$boost=3,site=chicagotribune.com
+$boost=1,site=forbes.com
+$boost=1,site=investopedia.com
+$boost=1,site=chicagotribune.com
 
 ! noise
 $downrank=2,site=dev.to
